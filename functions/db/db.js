@@ -1,6 +1,6 @@
 const knex = require("knex");
 // import knex from "knex";
-const knexfile = require("./knexfile");
+const knexfile = require("../../knexfile");
 // const fetch = require("node-fetch");
 const db = knex(knexfile.development);
 
