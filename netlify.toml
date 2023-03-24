@@ -1,8 +1,11 @@
-[build.enviroment]
-  NODE_VERSON = "18.15.0"
+[functions]
+external_node_modules = ["knex","pg"]
 
 [build]
   functions = "functions"
+
+[build.enviroment]
+  NODE_VERSON = "18.15.0"
 
 [dev]
   publish = "dist"
