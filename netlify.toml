@@ -7,3 +7,5 @@ external_node_modules = ["knex","pg"]
 [build.enviroment]
   NODE_VERSON = "18.15.0"
 
+[dev]
+  publish = "dist"
