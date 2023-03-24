@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const knex = require("../functions/db/db");
+const knex = require("../db");
 const serverless = require("serverless-http");
 const router = express.Router();
 
