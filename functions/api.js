@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const knex = require("../db/migrations/db");
+const knex = require("../src/db/migrations/db");
 const serverless = require("serverless-http");
 const router = express.Router();
 
@@ -26,7 +26,6 @@ router.get("/:id", (req, res) => {
       res.send(todo);
     });
 });
-
 router.post("/", (req, res) => {
   const { name } = req.body;
   knex.raw("insert into todo(name) values(?)", [name]).then(() => {
@@ -67,5 +66,9 @@ router.delete("/:id", (req, res) => {
     });
 });
 
+// app.listen(3000, () => {
+//   console.log("listening on port 3000");
+// });
+// module.exports = app;
 app.use("/.netlify/functions/api", router);
 module.exports.handler = serverless(app);

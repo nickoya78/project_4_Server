@@ -1,6 +1,8 @@
+const pg = require("pg");
+
 module.exports = {
   development: {
-    client: "postgresql",
+    client: "pg",
     connection: {
       database: "list_todo_task",
       user: "mylanoyagha",
