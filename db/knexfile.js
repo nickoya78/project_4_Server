@@ -2,9 +2,10 @@ const pg = require("pg");
 
 module.exports = {
   development: {
-    client: "pg",
+    client: "postgres",
     connection: {
-      url: "jdbc:postgresql://localhost:5432/list_todo_task",
+      Host: "localhost",
+      Port: 5432,
       database: "list_todo_task",
       user: "mylanoyagha",
       password: "Maximus@1",
