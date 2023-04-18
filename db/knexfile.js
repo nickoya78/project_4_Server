@@ -1,15 +1,10 @@
-const pg = require("pg");
+// const pg = require("pg");
 
 module.exports = {
   development: {
-    client: "postgres",
-    connection: {
-      Host: "localhost",
-      Port: 5432,
-      database: "list_todo_task",
-      user: "mylanoyagha",
-      password: "Maximus@1",
-    },
+    client: "postgresql",
+    connection:
+      "postgres://kdbxpkzd:sZuat_JKcqtDMbKLSjncECfKtoueExUo@mahmud.db.elephantsql.com/kdbxpkzd",
     pool: {
       min: 2,
       max: 10,
