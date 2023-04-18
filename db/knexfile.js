@@ -1,4 +1,4 @@
-// const pg = require("pg");
+const pg = require("pg");
 
 module.exports = {
   development: {
