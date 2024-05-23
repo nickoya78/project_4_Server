@@ -66,9 +66,9 @@ router.delete("/:id", (req, res) => {
     });
 });
 
-// app.listen(3000, () => {
-//   console.log("listening on port 3000");
-// });
-// module.exports = app;
+app.listen(8888, () => {
+  console.log("listening on port 8888");
+});
+module.exports = app;
 app.use("/.netlify/functions/api", router);
 module.exports.handler = serverless(app);
